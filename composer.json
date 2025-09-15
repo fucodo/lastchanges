@@ -1,0 +1,20 @@
+{
+    "description": "",
+    "type": "neos-package",
+    "name": "fucodo/lastchanges",
+    "require": {
+        "neos/flow": "*",
+        "kaystrobach/backend": "*",
+        "fucodo/registry": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "fucodo\\lastchanges\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "fucodo.lastchanges"
+        }
+    }
+}

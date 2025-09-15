@@ -1,0 +1,17 @@
+<html lang="de" xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+      xmlns:b="http://typo3.org/ns/KayStrobach/Backend/ViewHelpers"
+      data-namespace-typo3-fluid="true"
+>
+
+<b:be.setTitle>Änderungen</b:be.setTitle>
+
+<f:if condition="{changelog.content}">
+    <f:then>
+        <pre>{changelog.content -> f:format.nl2br()}</pre>
+    </f:then>
+    <f:else>
+        <div class="alert alert-info">
+            Keine Änderungen
+        </div>
+    </f:else>
+</f:if>
