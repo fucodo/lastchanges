@@ -12,6 +12,7 @@
             "fucodo\\lastchanges\\": "Classes/"
         }
     },
+    "license": "MIT",
     "extra": {
         "neos": {
             "package-key": "fucodo.lastchanges"
