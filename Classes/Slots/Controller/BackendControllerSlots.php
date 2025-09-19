@@ -28,16 +28,14 @@ class BackendControllerSlots
 
         $entry = new TopNavigation\Entry(
             '
-            <f:security.ifAuthenticated>
-                <f:then>
-                    <f:link.action action="index" controller="Changelog" package="fucodo.lastchanges" target="_top" class="{cssClass}">
-                        <span class="icon">
-                            <i:icon name="bootstrap-file-diff" size="16" />
-                            Änderungen
-                        </span>
-                    </f:link.action>
-                </f:then>
-            </f:security.ifAuthenticated>
+            <b:security.IfAccesOnControllersAction action="index" controller="Changelog" package="fucodo.lastchanges">
+                <f:link.action action="index" controller="Changelog" package="fucodo.lastchanges" target="_top" class="{cssClass}">
+                    <span class="icon">
+                        <i:icon name="bootstrap-file-diff" size="16" />
+                        Änderungen
+                    </span>
+                </f:link.action>
+            </b:security.IfAccesOnControllersAction>
             ',
             'start',
             'changes'

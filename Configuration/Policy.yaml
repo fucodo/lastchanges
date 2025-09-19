@@ -1,0 +1,18 @@
+#                                                                        #
+# Security policy for the TYPO3 Flow Framework                           #
+#                                                                        #
+# This file contains the default security policy configuration for the   #
+# TYPO3 Flow Framework. Don't modify this file but add configuration     #
+# options to the Policy.yaml file in the in global Configuration/        #
+# directory instead.                                                     #
+
+privilegeTargets:
+  'Neos\Flow\Security\Authorization\Privilege\Method\MethodPrivilege':
+    fucodo_lastchanges_AllControllers:
+      matcher: 'method(fucodo\lastchanges\Controller\.*->.*())'
+
+#roles:
+#  'Neos.Flow:Anonymous':
+#    privileges:
+#      - privilegeTarget: fucodo_lastchanges_AllControllers
+#        permission: DENY
